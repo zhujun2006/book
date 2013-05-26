@@ -21,6 +21,7 @@ public class Application extends Controller {
     JacksonDBCollection<Consumer, String> coll = MongoDB.getCollection("consumers", Consumer.class, String.class);
     DBCursor result = coll.find();
     System.out.println("count: " + result.count());
+    System.out.println("***zj test***");
     if (result.hasNext()) {
 
       // I don't know why it could not change into Consumer automaticly
