@@ -2,3 +2,39 @@ This is your new Play 2.1 application
 =====================================
 
 This file will be packaged with your application, when using `play dist`.
+
+// API: http://vznet.github.io/mongo-jackson-mapper/apidocs/net/vz/mongodb/jackson/JacksonDBCollection.html
+
+Consumer {
+  name
+  phone
+  email
+  address
+  ip
+}
+
+Food {
+  name
+  price
+  flavor
+  sales_mount
+}
+
+Order {
+  time
+  price
+  foods     Food[]
+}
+
+Shop {
+  name
+  address
+  phone
+  tel
+  longitude
+  latitude
+  sales
+  take_out_price
+  open_time
+  close_time
+}
